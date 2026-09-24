@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/styles/style.css" />
+    <link rel="stylesheet" href="./static/styles/styleindex.css" />
+    
+  </head>
+  <body>
+    <img
+      id="logo"
+      src="./static/images/Zvuk_logo_green.webp"
+      alt="Изображение кулинарного сайта"
+    />
+
+
+  <nav>
+    <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="library.html">Библиотека</a></li>
+        <li><a href="plans.html">Планы</a></li>
+        <li><a href="ContactInformation.html">Контакты</a></li>
+    </ul>
+</nav>
+
+<!-- левая часть -->
+<header class="hero-split-container">
+    <div class="hero-left-gallery">
+        <div class="gallery-grid">
+            <div class="gallery-item item-1">
+                <img src="static/images/micro.jpg" alt="">
+            </div>
+
+            <div class="gallery-item item-2">
+                <img src="static/images/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt="">
+            </div>
+
+            <div class="gallery-item item-3">
+                <img src="static/images/blocks-T3mKJXfdims-unsplash.jpg" alt="">
+            </div>
+
+            <div class="gallery-item item-4">
+              <img src="static/images/kevin-mccutcheon-TcSckNRL9J8-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- правая часть -->
+    <div class="hero-right-music">
+        <div class="hero-text">
+            <span class="badge">Музыкальный стриминг</span>
+            <h1>Твой идеальный саундтрек</h1>
+            <p>Миллионы треков, умные плейлисты и высокое Hi-Fi качество. Слушай бесплатно прямо сейчас.</p>
+            <a href="#" class="btn-listen">Слушать бесплатно</a>
+        </div>
+
+        <div class="mini-player-section">
+            <h3>В тренде сегодня:</h3>
+            
+            
+            <audio id="global-audio"></audio>
+
+            <div class="track-list">
+                <!-- Трек 1 (Моргенштерн) -->
+                <div class="track-item" data-src="./static/music/Morgenshtern - Последняя Любовь.mp3">
+                <div class="track-cover-stub">▶</div>
+                <div class="track-details">
+                    <h4>Последняя Любовь</h4>
+                    <p>MORGENSHTERN</p>
+                </div>
+                
+                <span class="track-time">--:--</span>
+            </div>
+
+            <!-- Трек 2 -->
+            <div class="track-item" data-src="./static/music/Morgenshtern - Повод.mp3">
+                <div class="track-cover-stub">▶</div>
+                <div class="track-details">
+                    <h4>Повод</h4>
+                    <p>MORGENSHTERN</p>
+                </div>
+                <span class="track-time">--:--</span>
+            </div>
+        </div>
+            <script src="static/scripts/index.js"></script>
+    </div>
+
+    
+<div id="bottom-player" class="bottom-player-panel">
+    <div class="player-content">
+        <div class="player-track-info">
+            <div class="player-cover">▶</div>
+            <div class="player-text">
+                <h4 id="player-title">Название трека</h4>
+                <p id="player-artist">Исполнитель</p>
+            </div>
+        </div>
+
+
+        <div class="player-controls-block">
+            <div class="player-buttons">
+                <button id="player-play-btn" class="control-btn">❚❚</button>
+            </div>
+            
+            <div class="progress-container">
+                <span id="player-current-time" class="time-label">0:00</span>
+                <input type="range" id="player-progress" min="0" max="100" value="0">
+                <span id="player-total-time" class="time-label">0:00</span>
+            </div>
+        </div>
+
+        
+        <div class="player-volume-block">
+            <span class="volume-icon">🔊</span>
+            <input type="range" id="player-volume" min="0" max="100" value="70">
+        </div>
+    </div>
+</div>
+
+
+</header>
+
+
+
+  </body>
+</html>

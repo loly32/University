@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/styles/style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="library.html">Библиотека</a></li>
+        <li><a href="plans.html">Планы</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+
+      <main style="padding: 40px 4%; max-width: 600px; margin: 0 auto">
+        <h1 style="font-size: 32px; margin-bottom: 12px; text-align: center">
+          Связаться с нами
+        </h1>
+        <p style="color: #b3b3b3; text-align: center; margin-bottom: 30px">
+          Возникли проблемы или есть предложения? Напишите нам!
+        </p>
+
+        <form
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: #12141c;
+            padding: 30px;
+            border-radius: 16px;
+          "
+        >
+          <div>
+            <label style="display: block; margin-bottom: 8px; color: #b3b3b3"
+              >Ваше имя</label
+            >
+            <input
+              type="text"
+              style="
+                width: 100%;
+                padding: 12px;
+                background: #0b0c10;
+                border: 1px solid #4f5d75;
+                border-radius: 8px;
+                color: #fff;
+                box-sizing: border-box;
+              "
+              placeholder="Иван"
+            />
+          </div>
+
+          <div>
+            <label style="display: block; margin-bottom: 8px; color: #b3b3b3"
+              >Email для связи</label
+            >
+            <input
+              type="email"
+              style="
+                width: 100%;
+                padding: 12px;
+                background: #0b0c10;
+                border: 1px solid #4f5d75;
+                border-radius: 8px;
+                color: #fff;
+                box-sizing: border-box;
+              "
+              placeholder="example@mail.com"
+            />
+          </div>
+
+          <div>
+            <label style="display: block; margin-bottom: 8px; color: #b3b3b3"
+              >Сообщение</label
+            >
+            <textarea
+              rows="4"
+              style="
+                width: 100%;
+                padding: 12px;
+                background: #0b0c10;
+                border: 1px solid #4f5d75;
+                border-radius: 8px;
+                color: #fff;
+                box-sizing: border-box;
+                resize: none;
+              "
+              placeholder="Ваш текст..."
+            ></textarea>
+          </div>
+
+          <button
+            type="button"
+            style="
+              background: #1db954;
+              color: #000;
+              padding: 14px;
+              border: none;
+              border-radius: 25px;
+              font-weight: bold;
+              cursor: pointer;
+              margin-top: 10px;
+            "
+          >
+            Отправить сообщение
+          </button>
+        </form>
+      </main>
+    </nav>
+  </body>
+</html>

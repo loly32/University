@@ -1,0 +1,51 @@
+
+
+/* Обнуляем стандартные отступы браузера для списка */
+nav ul {
+    list-style-type: none; /* Убираем маркеры (точки) списка */
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50; /* Темный красивый фон для меню */
+    display: flex; /* Выстраиваем элементы в одну линию */
+    justify-content: center; /* Центрируем пункты меню */
+    flex-wrap: wrap; /* Чтобы на смартфонах меню красиво переносилось */
+}
+
+/* Стили для каждого пункта меню */
+nav li {
+    margin: 0;
+}
+
+/* Стили для самих ссылок */
+nav a {
+    display: block; /* Растягиваем ссылку на всю область клика */
+    color: #ffffff; /* Белый цвет текста */
+    text-align: center;
+    padding: 14px 24px; /* Внутренние отступы (высота и ширина кнопки) */
+    text-decoration: none; /* Убираем стандартное подчеркивание ссылок */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Современный шрифт */
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+/* Эффект при наведении курсора на ссылку */
+nav a:hover {
+    background-color: #34495e; /* Чуть более светлый фон */
+    color: #1abc9c; /* Бирюзовый цвет текста */
+}
+
+/* Стиль для активной страницы (опционально, см. шаг 2) */
+nav a.active {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+
+body {
+    background-color: #0b0c10; /* Глубокий темный фон */
+    color: #ffffff;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
